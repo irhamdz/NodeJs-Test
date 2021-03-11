@@ -27,6 +27,11 @@ mysql > CREATE TABLE IF NOT EXISTS `logger` ( id int(11) NOT NULL PRIMARY KEY AU
 node server.js
 ```
 
+- test app
+```bash
+npm test
+```
+
 # API SPEC
 ## Search All Movies
 
