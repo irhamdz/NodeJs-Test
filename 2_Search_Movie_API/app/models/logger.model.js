@@ -13,8 +13,6 @@ Logger.create = (newLogger, result) => {
             result(err, null);
             return;
         }
-
-        console.log("created logger:", { id: res.insertId, ...newLogger });
         result(null, { id: res.insertId, ...newLogger });
     })
 }

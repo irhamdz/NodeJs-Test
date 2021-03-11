@@ -17,8 +17,4 @@ app.get("/", (req, res) => {
 require("./app/routes/logger.routes")(app);
 require("./app/routes/omdb.routes")(app);
 
-// set port, listen for request
-const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => {
-    console.log(`Server is running on port ${PORT}.`)
-})
+module.exports = app
